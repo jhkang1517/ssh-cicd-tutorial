@@ -13,6 +13,6 @@ jobs:
         run: |
           cd /home/admin/app/ssh-cicd-tutorial && sudo git pull origin main
 
-#      - name: Deploy with React Build
-#        run: |
-#          sudo sh /var/www/roadmap/deploy.sh
+      - name: Deploy with Gradle Build
+        run: |
+          sudo sh /home/admin/app/ssh-cicd-tutorial/deploy.sh
