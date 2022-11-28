@@ -1,0 +1,18 @@
+name: CD
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - name: Pull Master Branch
+        run: |
+          cd /home/admin/app/ssh-cicd-tutorial && sudo git pull origin main
+
+#      - name: Deploy with React Build
+#        run: |
+#          sudo sh /var/www/roadmap/deploy.sh
