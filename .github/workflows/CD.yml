@@ -11,8 +11,8 @@ jobs:
     steps:
       - name: Pull Master Branch
         run: |
-          cd /home/admin/app/ssh-cicd-tutorial && sudo git pull origin main
+          cd /home/admin/app/cicd-tutorial && sudo git pull origin main
 
       - name: Deploy with Gradle Build
         run: |
-          sudo sh /home/admin/app/ssh-cicd-tutorial/deploy.sh
+          sudo sh /home/admin/app/cicd-tutorial/deploy.sh
